@@ -16,7 +16,8 @@ Usage of ./zk-backup:
         source zk cluster address
   -targetaddr string
         target zk cluster address
-
+  -rootpath string
+        transfer data start path,default /
 Example:
-    zk-backup -sourceaddr 127.0.0.1:2181 -targetaddr 127.0.0.1:2182
+    zk-backup -sourceaddr 127.0.0.1:2181 -targetaddr 127.0.0.1:2182 -rootpath /
 ```

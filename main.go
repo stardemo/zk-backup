@@ -22,7 +22,8 @@ import (
 var (
 	SourceAddr  = flag.String("sourceaddr", "", "source zk cluster address")
 	TargetAddr  = flag.String("targetaddr", "", "target zk cluster address")
-	ExcludePath = flag.String("excludepath", "/r3/failover/history,/r3/failover/doing", "exclude path")
+	RootPath    = flag.String("rootpath", "/", "transfer data start path,default /")
+	ExcludePath = flag.String("excludepath", "", "exclude path")
 )
 
 const PERM_FILE = zk.PermAdmin | zk.PermRead | zk.PermWrite
@@ -165,6 +166,6 @@ func main() {
 		os.Exit(1)
 	}
 
-	walk("/r3", sourceConn, targetConn, exPaths)
+	walk(*RootPath, sourceConn, targetConn, exPaths)
 
 }
