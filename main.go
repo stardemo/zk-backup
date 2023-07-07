@@ -16,7 +16,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/samuel/go-zookeeper/zk"
+	"github.com/go-zookeeper/zk"
 )
 
 var (
