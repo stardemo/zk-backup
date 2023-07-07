@@ -4,8 +4,7 @@ simple tool to backup zk tree to a backup zk cluster
 ## Installation
 
 ```bash
-go get github.com/YongMan/zk-backup
-go install github.com/YongMan/zk-backup
+go install github.com/stardemo/zk-backup
 ```
 # Usage
 ```
