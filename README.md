@@ -1,4 +1,5 @@
 # zk-backup
+
 simple tool to backup zk tree to a backup zk cluster
 
 ## Installation
@@ -6,7 +7,11 @@ simple tool to backup zk tree to a backup zk cluster
 ```bash
 go install github.com/stardemo/zk-backup@latest
 ```
+
 # Usage
+
+***struct update doc has not been update***
+
 ```
 Usage of ./zk-backup:
   -excludepath string
